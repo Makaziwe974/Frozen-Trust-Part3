@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Send Frozen Trust an enquiry about ice products and services.">
+
+    <title>Enquiry | Frozen Trust</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/frozen-trust-logo.png"
+                 alt="Frozen Trust logo"
+                 class="logo">
+            <span>Frozen Trust</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="mainNav" class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Get in touch</p>
+            <h1>Make an Enquiry</h1>
+            <p>
+                Complete the form below to prepare an enquiry
+                about our products or services.
+            </p>
+        </div>
+
+        <form id="enquiryForm" class="enquiry-form">
+            <div class="form-group">
+                <label for="customerName">Full name</label>
+                <input type="text"
+                       id="customerName"
+                       name="customerName"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerEmail">Email address</label>
+                <input type="email"
+                       id="customerEmail"
+                       name="customerEmail"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="customerPhone">Contact number</label>
+                <input type="tel"
+                       id="customerPhone"
+                       name="customerPhone">
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryType">What are you enquiring about?</label>
+
+                <select id="enquiryType"
+                        name="enquiryType"
+                        required>
+                    <option value="">Select an option</option>
+                    <option value="2 kg ice">2 kg ice</option>
+                    <option value="3 kg ice">3 kg ice</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Freezer hire">Freezer hire</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity or other requirements</label>
+                <input type="text"
+                       id="quantity"
+                       name="quantity"
+                       placeholder="For example, 20 bags">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your message</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="button">
+                Prepare Enquiry
+            </button>
+
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <p class="notice">
+            This demonstration form prepares an email for you to review.
+            It does not store or automatically send enquiries.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> Frozen Trust.</p>
+        <p>Mpumalanga, Thabana 210</p>
+    </footer>
+
+</body>
+</html>
