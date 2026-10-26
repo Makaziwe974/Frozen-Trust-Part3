@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore Frozen Trust's available bagged ice products and pricing information.">
+
+    <title>Products | Frozen Trust</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/frozen-trust-logo.png"
+                 alt="Frozen Trust logo"
+                 class="logo">
+            <span>Frozen Trust</span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="mainNav" class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="section-heading">
+            <p class="eyebrow">Our products</p>
+            <h1>Ice Products</h1>
+            <p>
+                Explore our available ice products.
+                Please contact us to confirm stock and current pricing.
+            </p>
+        </div>
+
+        <div class="product-grid">
+            <article class="product-card">
+                <img src="images/ice-cubes.jpg"
+                     alt="Bagged ice cubes">
+
+                <div class="product-content">
+                    <h2>2 kg Ice Bags</h2>
+                    <p>Price per bag: R10</p>
+                    <p>20 bags: R200</p>
+                    <p>
+                        Contact us to confirm availability and
+                        arrange your requirements.
+                    </p>
+
+                    <a class="button"
+                       href="enquiry.html?product=2kg">
+                        Enquire About 2 kg Ice
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img src="images/ice-cubes.jpg"
+                     alt="Ice cubes supplied in bags">
+
+                <div class="product-content">
+                    <h2>3 kg Ice Bags</h2>
+                    <p>
+                        Contact Frozen Trust for the current
+                        price and availability.
+                    </p>
+
+                    <a class="button"
+                       href="enquiry.html?product=3kg">
+                        Enquire About 3 kg Ice
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <p class="notice">
+            Prices and availability should be confirmed with
+            Frozen Trust before an order is placed.
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> Frozen Trust.</p>
+        <p>Mpumalanga, Thabana 210</p>
+    </footer>
+
+</body>
+</html>
